@@ -47,7 +47,7 @@ namespace UIPIWORKSDEMO
         SqlCommand komut;
         SqlConnection baglanti = new SqlConnection("Data Source = PATATES; Initial Catalog = exdatab; Integrated Security = True");
         SqlDataReader reader;
-        SqlDataAdapter da;
+        
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -55,16 +55,6 @@ namespace UIPIWORKSDEMO
             guna2Button1.Visible = false;
 
             pross();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
 
        
@@ -102,9 +92,9 @@ namespace UIPIWORKSDEMO
         private void guna2CircleButton2_Click(object sender, EventArgs e)
         {
               if (MessageBox.Show("Are You Sure To Exit Programme ?","Exit",MessageBoxButtons.OKCancel)== DialogResult.OK)
-     {
-         Application.Exit();
-     }
+                {
+                    Application.Exit();
+                }
         }
 
         private void guna2CircleButton1_Click(object sender, EventArgs e)
@@ -114,20 +104,7 @@ namespace UIPIWORKSDEMO
             guna2Button1.Visible = true;
             guna2DataGridView1.Size = new Size(370, 275);
         }
-        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2TextBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void guna2CheckBox2_CheckedChanged(object sender, EventArgs e)
         {
@@ -160,11 +137,31 @@ namespace UIPIWORKSDEMO
         }
 
         private void guna2ToggleSwitch1_CheckedChanged(object sender, EventArgs e)
-        {   
-            if (guna2ToggleSwitch1.Checked && guna2DataGridView1.Columns[4] == ' false ')
+        {
+            CurrencyManager curre = (CurrencyManager)BindingContext[guna2DataGridView1.DataSource];
+            curre.SuspendBinding();
+            if (guna2ToggleSwitch1.Checked)
             {
-                guna2DataGridView1.
+                for (int i = 0; i < Convert.ToInt32(guna2DataGridView1.Rows.Count)-1; i++)
+                {
+                    if (guna2DataGridView1.Rows[i].Cells[3].Value.ToString() == "false" )
+                    {
+                        guna2DataGridView1.Rows[i].Visible = false;
+                    }
+                }
             }
+
+            else if (!guna2ToggleSwitch1.Checked)
+            {       
+                for (int i = 0; i < Convert.ToInt32(guna2DataGridView1.Rows.Count)-1; i++)
+                 {
+                     if (guna2DataGridView1.Rows[i].Cells[3].Value.ToString() == "false")
+                     {
+                         guna2DataGridView1.Rows[i].Visible = true;
+                     }
+                 }
+            }
+
         }
     }
 }

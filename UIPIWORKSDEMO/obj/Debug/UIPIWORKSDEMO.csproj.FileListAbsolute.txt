@@ -1,0 +1,17 @@
+C:\Users\fuko9\source\repos\UIPIWORKSDEMO\UIPIWORKSDEMO\bin\Debug\UIPIWORKSDEMO.exe.config
+C:\Users\fuko9\source\repos\UIPIWORKSDEMO\UIPIWORKSDEMO\bin\Debug\UIPIWORKSDEMO.exe
+C:\Users\fuko9\source\repos\UIPIWORKSDEMO\UIPIWORKSDEMO\bin\Debug\UIPIWORKSDEMO.pdb
+C:\Users\fuko9\source\repos\UIPIWORKSDEMO\UIPIWORKSDEMO\bin\Debug\Guna.UI2.dll
+C:\Users\fuko9\source\repos\UIPIWORKSDEMO\UIPIWORKSDEMO\obj\Debug\UIPIWORKSDEMO.csproj.AssemblyReference.cache
+C:\Users\fuko9\source\repos\UIPIWORKSDEMO\UIPIWORKSDEMO\obj\Debug\UIPIWORKSDEMO.csproj.SuggestedBindingRedirects.cache
+C:\Users\fuko9\source\repos\UIPIWORKSDEMO\UIPIWORKSDEMO\obj\Debug\UIPIWORKSDEMO.Form1.resources
+C:\Users\fuko9\source\repos\UIPIWORKSDEMO\UIPIWORKSDEMO\obj\Debug\UIPIWORKSDEMO.Properties.Resources.resources
+C:\Users\fuko9\source\repos\UIPIWORKSDEMO\UIPIWORKSDEMO\obj\Debug\UIPIWORKSDEMO.csproj.GenerateResource.cache
+C:\Users\fuko9\source\repos\UIPIWORKSDEMO\UIPIWORKSDEMO\obj\Debug\UIPIWORKSDEMO.csproj.CoreCompileInputs.cache
+C:\Users\fuko9\source\repos\UIPIWORKSDEMO\UIPIWORKSDEMO\obj\Debug\UIPIWORKSDEMO.csproj.CopyComplete
+C:\Users\fuko9\source\repos\UIPIWORKSDEMO\UIPIWORKSDEMO\obj\Debug\UIPIWORKSDEMO.exe
+C:\Users\fuko9\source\repos\UIPIWORKSDEMO\UIPIWORKSDEMO\obj\Debug\UIPIWORKSDEMO.pdb
+C:\Users\fuko9\source\repos\UIPIWORKSDEMO\UIPIWORKSDEMO\bin\Debug\EntityFramework.dll
+C:\Users\fuko9\source\repos\UIPIWORKSDEMO\UIPIWORKSDEMO\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\fuko9\source\repos\UIPIWORKSDEMO\UIPIWORKSDEMO\bin\Debug\EntityFramework.xml
+C:\Users\fuko9\source\repos\UIPIWORKSDEMO\UIPIWORKSDEMO\bin\Debug\EntityFramework.SqlServer.xml

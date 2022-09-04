@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="exdatabModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'exdatab.dbo.Table1' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Table1">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="Username" />
+      <PropertyRef Name="Email" />
+      <PropertyRef Name="Enabled" />
+      <PropertyRef Name="Phone" />
+      <PropertyRef Name="UserRole" />
+      <PropertyRef Name="DisplayName" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Username" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Enabled" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserRole" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DisplayName" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="exdatabModelStoreContainer">
+    <EntitySet Name="Table1" EntityType="Self.Table1" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Table1].[ID] AS [ID], 
+    [Table1].[Username] AS [Username], 
+    [Table1].[Email] AS [Email], 
+    [Table1].[Enabled] AS [Enabled], 
+    [Table1].[Phone] AS [Phone], 
+    [Table1].[UserRole] AS [UserRole], 
+    [Table1].[DisplayName] AS [DisplayName]
+    FROM [dbo].[Table1] AS [Table1]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>
